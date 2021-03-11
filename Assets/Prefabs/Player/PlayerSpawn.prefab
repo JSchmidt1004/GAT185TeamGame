@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2903671261890359826}
   m_Layer: 0
   m_Name: PlayerSpawn
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
   spawnGameObject: {fileID: 4368140582763654554, guid: a44e25479dd0d794ab72ebd5d0017b5f, type: 3}
   minSpawnTime: 0
   maxSpawnTime: 0
-  IsSpawnChild: 0
+  IsSpawnChild: 1
   type: 2
   onSpawnEvent: StartSession
   onActivateEvent: 
