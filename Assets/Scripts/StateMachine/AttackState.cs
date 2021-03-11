@@ -33,6 +33,7 @@ public class AttackState : State
             if (attackTimer <= 0)
             {
                 float distance = Vector3.Distance(owner.transform.position, player.transform.position);
+                Debug.Log(distance);
                 if (distance < meleeDistance)
                 {
                     ((StateAgent)owner).StateMachine.SetState("AttackMeleeState");
