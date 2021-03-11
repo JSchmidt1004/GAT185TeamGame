@@ -87,9 +87,6 @@ public class GameController : MonoBehaviour
 
     IEnumerator LoadMenuScene(string sceneName)
     {
-        transition.StartTransition(Color.black, 1);
-
-        while (!transition.IsDone) { yield return null; }
 
         titleScreen.SetActive(true);
         SceneManager.LoadScene(sceneName);
@@ -105,7 +102,8 @@ public class GameController : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        optionsScreen?.SetActive(false);
+        //optionsScreen?.SetActive(false);
+
     }
 
     public void OnOptionsScreen()
