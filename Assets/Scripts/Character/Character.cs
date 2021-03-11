@@ -29,7 +29,6 @@ public class Character : MonoBehaviour
     public eSpace space = eSpace.World;
     public eMovement movement = eMovement.Free;
     public float turnRate = 3;
-    public float stamina = 10;
 
     float sprintSpeed = 0;
     bool isRunning = false;
@@ -40,11 +39,13 @@ public class Character : MonoBehaviour
     Transform cameraTransform;
 
     public Health health { get; set; }
+    public Stamina stamina { get; set; }
 
     void Start()
     {
         characterController = GetComponent<CharacterController>();
         health = GetComponent<Health>();
+        stamina = GetComponent<Stamina>();
         cameraTransform = Camera.main.transform;
     }
 
@@ -97,11 +98,12 @@ public class Character : MonoBehaviour
         }
         // ***
 
-        if (isRunning && stamina > 0)
+        if (isRunning && stamina.stamina > 0)
         {
             sprintSpeed = 3;
+            stamina.stamina -= 5.0f * Time.deltaTime;
         }
-        else if (!isRunning || stamina <= 0)
+        else if (!isRunning || stamina.stamina <= 0)
         {
             isRunning = false;
             sprintSpeed = 0;
