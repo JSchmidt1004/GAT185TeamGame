@@ -51,7 +51,6 @@ public class Game : MonoBehaviour
                 startScreen.SetActive(false);
                 scoreUI.text = string.Format("{0:D4}", (int)Score);
                 State = eState.Game;
-                player.ResetCharacter();
                 music.Play();
                 break;
             case eState.Game:

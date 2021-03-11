@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5972203833686589855}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -48,14 +48,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f706299d16508a14d8596d87fb59cb37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  jump: 1
+  speed: 3
+  jump: 6.5
   gravity: -9.8
   animator: {fileID: 6031226817417807355}
   weapon: {fileID: 0}
-  space: 0
-  movement: 0
-  turnRate: 3
+  space: 1
+  movement: 2
+  turnRate: 10
+  stamina: 10
 --- !u!114 &5972203833686589844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,7 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed88fb3367310547b7d480a165c0050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthMax: 0
+  healthMax: 10
   decay: 0
   destroyOnDeath: 0
   destroySpawnObject: {fileID: 0}
@@ -119,7 +120,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!143 &5972203833686589850
 CharacterController:
   m_ObjectHideFlags: 0
@@ -136,7 +137,7 @@ CharacterController:
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
+  m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &5972203833914829193
 PrefabInstance:
@@ -155,7 +156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4728115190149872, guid: c9896afcf3635ab4fbfe27f9f6ae39fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4728115190149872, guid: c9896afcf3635ab4fbfe27f9f6ae39fb, type: 3}
       propertyPath: m_LocalPosition.z
