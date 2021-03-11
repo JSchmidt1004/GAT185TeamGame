@@ -65,6 +65,7 @@ GameObject:
   - component: {fileID: 7095828606405548642}
   - component: {fileID: 3747878452136350629}
   - component: {fileID: 8190129518972941242}
+  - component: {fileID: 1055147378464819847}
   m_Layer: 8
   m_Name: GoblinAgent
   m_TagString: Untagged
@@ -249,6 +250,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialNode: {fileID: 0}
+--- !u!114 &1055147378464819847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7835271976014992788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed88fb3367310547b7d480a165c0050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthMax: 20
+  decay: 0
+  destroyOnDeath: 0
+  destroySpawnObject: {fileID: 0}
+  slider: {fileID: 0}
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4715003201357856034}
+        m_TargetAssemblyTypeName: StateMachine, Assembly-CSharp
+        m_MethodName: SetState
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Death
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &4688541496590314285
 PrefabInstance:
   m_ObjectHideFlags: 0

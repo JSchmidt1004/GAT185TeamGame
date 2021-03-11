@@ -36,17 +36,17 @@ public class GameController : MonoBehaviour
     {
         highScore = PlayerPrefs.GetInt("HighScore", 0);
 
-        float masterVolume = PlayerPrefs.GetFloat("MasterVolume", 0);
-        audioMixer.SetFloat("MasterVolume", masterVolume);
-        MasterSlider.value = masterVolume;
+        //float masterVolume = PlayerPrefs.GetFloat("MasterVolume", 0);
+        //audioMixer.SetFloat("MasterVolume", masterVolume);
+        //MasterSlider.value = masterVolume;
 
-        float musicVolume = PlayerPrefs.GetFloat("MusicVolume", 0);
-        audioMixer.SetFloat("MusicVolume", musicVolume);
-        MusicSlider.value = musicVolume;
+        //float musicVolume = PlayerPrefs.GetFloat("MusicVolume", 0);
+        //audioMixer.SetFloat("MusicVolume", musicVolume);
+        //MusicSlider.value = musicVolume;
 
-        float sfxVolume = PlayerPrefs.GetFloat("SFXVolume", 0);
-        audioMixer.SetFloat("SFXVolume", sfxVolume);
-        SFXSlider.value = sfxVolume;
+        //float sfxVolume = PlayerPrefs.GetFloat("SFXVolume", 0);
+        //audioMixer.SetFloat("SFXVolume", sfxVolume);
+        //SFXSlider.value = sfxVolume;
     }
 
     public void SetHighScore(int score)
