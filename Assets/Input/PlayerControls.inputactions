@@ -14,9 +14,65 @@
                     "interactions": ""
                 },
                 {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "4d751512-6b7b-472e-bb35-5bffd0fe6586",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
                     "name": "Jump",
                     "type": "Button",
                     "id": "1f9891da-4c2e-488c-90d9-495edae97079",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Swing",
+                    "type": "Button",
+                    "id": "5c02974f-2483-4eb3-84d0-652458786db6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Yaw",
+                    "type": "Value",
+                    "id": "5f2d5afa-28be-4e56-8753-d25ebf7a7c69",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Pitch",
+                    "type": "Value",
+                    "id": "86dbabe7-de51-4d4c-ba5e-a63e8eb20432",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Distance",
+                    "type": "Value",
+                    "id": "094f4f2e-c4d4-46da-b3d6-607f608bd996",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Center",
+                    "type": "Button",
+                    "id": "930425f5-9005-4bbd-a6d4-491b51028179",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "05e33fe3-a473-4283-b4b8-4c331eb3e7f8",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -86,6 +142,83 @@
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1895eb56-fccd-41e9-82a2-f63c81d87aa4",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Swing",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5722f10c-a9a8-449b-b259-7983493f6a17",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9992bb57-21b9-46cc-8749-ebf032a9ec72",
+                    "path": "<Mouse>/delta/x",
+                    "interactions": "",
+                    "processors": "Scale(factor=0.03)",
+                    "groups": "",
+                    "action": "Yaw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b7e7be99-c8c1-4d87-b01f-062c1b21cbfb",
+                    "path": "<Mouse>/delta/y",
+                    "interactions": "",
+                    "processors": "Scale(factor=0.03),Invert",
+                    "groups": "",
+                    "action": "Pitch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "36d10083-0a5e-4546-98c5-1686ccbceb7e",
+                    "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "Scale(factor=0.1),Invert",
+                    "groups": "",
+                    "action": "Distance",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "14a2ad80-a694-4c35-84cd-2da785a610ef",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Center",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4e8149f-d4e7-481e-9440-92f676a6293d",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
