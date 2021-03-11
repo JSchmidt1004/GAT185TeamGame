@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5972203833686589848}
   - component: {fileID: 5972203833686589845}
   - component: {fileID: 5972203833686589844}
+  - component: {fileID: 1394263625587644542}
   - component: {fileID: 5972203833686589849}
   - component: {fileID: 5972203833686589851}
   - component: {fileID: 5972203833686589850}
@@ -69,8 +70,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed88fb3367310547b7d480a165c0050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthMax: 10
+  healthMax: 100
   decay: 0
+  destroyOnDeath: 0
+  destroySpawnObject: {fileID: 0}
+  slider: {fileID: 0}
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1394263625587644542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5972203833686589855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92455ff01cb2f9541b453a8d7f689b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  staminaMax: 100
+  restore: 2
   destroyOnDeath: 0
   destroySpawnObject: {fileID: 0}
   slider: {fileID: 0}
@@ -151,6 +172,10 @@ PrefabInstance:
       value: Mesh
       objectReference: {fileID: 0}
     - target: {fileID: 4728115190149872, guid: c9896afcf3635ab4fbfe27f9f6ae39fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728115190149872, guid: c9896afcf3635ab4fbfe27f9f6ae39fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -163,6 +188,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4728115190149872, guid: c9896afcf3635ab4fbfe27f9f6ae39fb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728115190149872, guid: c9896afcf3635ab4fbfe27f9f6ae39fb, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -172,14 +201,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4728115190149872, guid: c9896afcf3635ab4fbfe27f9f6ae39fb, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4728115190149872, guid: c9896afcf3635ab4fbfe27f9f6ae39fb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4728115190149872, guid: c9896afcf3635ab4fbfe27f9f6ae39fb, type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4728115190149872, guid: c9896afcf3635ab4fbfe27f9f6ae39fb, type: 3}
