@@ -31,6 +31,8 @@ public class Character : MonoBehaviour
     public float turnRate = 3;
 
     float sprintSpeed = 0;
+    float distanceFallTime = 0.5f;
+    float groundTimer = 0;
     bool isRunning = false;
     bool onGround = false;
     CharacterController characterController;
@@ -53,6 +55,15 @@ public class Character : MonoBehaviour
     {
         if (animator.GetBool("Death")) return;
         
+        //bool onGroundTimerBool = characterController.isGrounded;
+        //if (onGroundTimerBool) groundTimer += Time.deltaTime;
+        //else
+        //{
+        //    groundTimer = 0;
+        //    onGround = true;
+        //}
+
+        //if (groundTimer >= distanceFallTime) 
         onGround = characterController.isGrounded;
         if (onGround && velocity.y < 0)
         {

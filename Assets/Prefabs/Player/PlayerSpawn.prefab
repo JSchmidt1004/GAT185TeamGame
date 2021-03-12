@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2903671261890359829}
   - component: {fileID: 2903671261890359826}
+  - component: {fileID: -8765000625099206631}
   m_Layer: 0
   m_Name: PlayerSpawn
   m_TagString: Player
@@ -52,3 +53,17 @@ MonoBehaviour:
   onActivateEvent: 
   onDeactivateEvent: 
   active: 1
+--- !u!114 &-8765000625099206631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2903671261890359827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699ec6a905db5ae43b1f9b32c073b9a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSlider: {fileID: 0}
+  staminaSlider: {fileID: 0}

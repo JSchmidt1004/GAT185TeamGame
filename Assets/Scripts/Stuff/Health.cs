@@ -23,9 +23,9 @@ public class Health : MonoBehaviour
         slider = GetComponentInParent<ConnectSlider>()?.healthSlider;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        Debug.Log("Health: " + health + " of " + gameObject.name);
         //if (Game.Instance.State == Game.eState.Game)
         {
             AddHealth(-Time.deltaTime * decay);

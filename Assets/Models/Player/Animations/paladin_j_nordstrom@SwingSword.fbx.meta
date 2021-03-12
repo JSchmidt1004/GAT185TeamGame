@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: f3168ac0735a2f2499ee35fafdba41ea
 ModelImporter:
-  serializedVersion: 20101
+  serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
@@ -59,11 +59,11 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.37566137
+      - time: 0.23151723
         functionName: OnCreate
         data: Sword
         objectReferenceParameter: {fileID: 2404341843096074917, guid: 7caa382879bddec418c3d13ab346d330, type: 3}
-        floatParameter: 3
+        floatParameter: 2
         intParameter: 0
         messageOptions: 0
       transformMask: []
@@ -880,6 +880,7 @@ ModelImporter:
   animationType: 3
   humanoidOversampling: 1
   avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
