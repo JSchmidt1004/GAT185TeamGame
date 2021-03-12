@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GameController.unity
-    guid: abedae23fa79e8346bb3d3ec5f7ef28c
-  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 0f629d4eacf394f418d65091ee7c1f57
   - enabled: 1
@@ -17,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossDungeon.unity
     guid: e380b738df763af459789223f1488d51
+  - enabled: 1
+    path: Assets/Scenes/GameController.unity
+    guid: abedae23fa79e8346bb3d3ec5f7ef28c
   m_configObjects: {}
