@@ -7,16 +7,21 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    public GameObject player;
     public GameObject titleScreen;
     public GameObject optionsScreen;
     public GameObject pauseScreen;
     public Transition transition;
+    public GameObject secondWorld;
 
     public AudioMixer audioMixer;
 
     public Slider MasterSlider;
     public Slider MusicSlider;
     public Slider SFXSlider;
+
+    public string dungeonScene = "BossDungeon";
+    public string mainScene = "GroupGameScene";
 
     public int highScore = 0;
 
@@ -35,24 +40,16 @@ public class GameController : MonoBehaviour
     void Start()
     {
         highScore = PlayerPrefs.GetInt("HighScore", 0);
-
-        //float masterVolume = PlayerPrefs.GetFloat("MasterVolume", 0);
-        //audioMixer.SetFloat("MasterVolume", masterVolume);
-        //MasterSlider.value = masterVolume;
-
-        //float musicVolume = PlayerPrefs.GetFloat("MusicVolume", 0);
-        //audioMixer.SetFloat("MusicVolume", musicVolume);
-        //MusicSlider.value = musicVolume;
-
-        //float sfxVolume = PlayerPrefs.GetFloat("SFXVolume", 0);
-        //audioMixer.SetFloat("SFXVolume", sfxVolume);
-        //SFXSlider.value = sfxVolume;
     }
 
     public void SetHighScore(int score)
     {
         highScore = score;
         PlayerPrefs.SetInt("HighScore", highScore);
+    }
+    public void OnLoadDungeon()
+    {
+        OnLoadGameScene(dungeonScene);
     }
 
     public void OnLoadGameScene(string sceneName)
@@ -157,4 +154,5 @@ public class GameController : MonoBehaviour
         audioMixer.SetFloat("SFXVolume", level);
         PlayerPrefs.SetFloat("SFXVolume", level);
     }
+
 }

@@ -20,7 +20,7 @@ public class Health : MonoBehaviour
     void Start()
     {
         ResetHealth();
-        slider = GetComponentInParent<ConnectSlider>().healthSlider;
+        slider = GetComponentInParent<ConnectSlider>()?.healthSlider;
     }
 
     // Update is called once per frame
